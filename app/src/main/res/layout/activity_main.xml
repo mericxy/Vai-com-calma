@@ -4,15 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03A9F4"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/button_config"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="right"
+        android:text="Config"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="0dp" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Olá Fulano"
+        android:textColor="@color/branco"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/branco"
+        android:text="Saldo atual"
+        android:textColor="@color/preto"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/branco"
+        android:text="R$ 1.155,25"
+        android:textColor="@color/fundoInicial"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="363dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center|center_horizontal"
+        android:background="@color/branco"
+        android:backgroundTint="#03A9F4"
+        android:foregroundGravity="center|center_horizontal"
+        android:text="Veja o seu gráfico"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="364dp"
+        android:layout_height="226dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/branco"
+        android:src="@android:drawable/ic_menu_gallery"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="462dp"
+        android:layout_height="231dp"
+        android:background="@color/branco"
+        android:backgroundTint="#FEFEFE"
+        android:text="ATIVIDADES"
+        android:textColor="@color/preto"
+        android:textSize="27sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <Button
+        android:id="@+id/button_recebi"
+        android:layout_width="149dp"
+        android:layout_height="108dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/botaoRecebiGastei"
+        android:text="RECEBI"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <Button
+        android:id="@+id/button_gastei"
+        android:layout_width="149dp"
+        android:layout_height="108dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/botaoRecebiGastei"
+        android:text="GASTEI"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="562dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
